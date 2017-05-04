@@ -9,11 +9,53 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    @IBAction func changeSection(_ sender: UIButton) {
-    }
+
+    @IBOutlet weak var tableData: UITableView!
     
- 
     let dogs = ["dog-1", "dog-2", "dog-3", "dog-1", "dog-2", "dog-3"]
+    let fun = ["fun-1", "fun-2", "fun-3", "fun-4", "fun-5"]
+    //var data
+
+    @IBAction func changeSection(_ sender: UIButton) {
+        
+        let home = view.viewWithTag(1) as! UIButton
+        let fun = view.viewWithTag(2) as! UIButton
+        let other = view.viewWithTag(3) as! UIButton
+        let settings = view.viewWithTag(4) as! UIButton
+        
+        switch sender.tag {
+        case 1:
+            home.titleLabel?.textColor = UIColor.white
+            fun.titleLabel?.textColor = UIColor.gray
+            other.titleLabel?.textColor = UIColor.gray
+            settings.titleLabel?.textColor = UIColor.gray
+            print("home clic")
+        case 2:
+            home.titleLabel?.textColor = UIColor.gray
+            fun.titleLabel?.textColor = UIColor.white
+            other.titleLabel?.textColor = UIColor.gray
+            settings.titleLabel?.textColor = UIColor.gray
+               
+            refresh()
+            print("fun clic")
+            
+        case 3:
+            home.titleLabel?.textColor = UIColor.gray
+            fun.titleLabel?.textColor = UIColor.gray
+            other.titleLabel?.textColor = UIColor.white
+            settings.titleLabel?.textColor = UIColor.gray
+            print("other clic")
+        case 4:
+            home.titleLabel?.textColor = UIColor.gray
+            fun.titleLabel?.textColor = UIColor.gray
+            other.titleLabel?.textColor = UIColor.gray
+            settings.titleLabel?.textColor = UIColor.white
+            print("settings clic")
+            
+        default:
+            print("default output")
+        }
+    }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return (dogs.count)
@@ -26,9 +68,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.myLabel.text = dogs[indexPath.row]
         return (cell)
     }
-
+    
+    func refresh(){
+        self.tableData.reloadData()
+    }
     
     override func viewDidLoad() {
+        print("viewDidLoad")
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -38,3 +84,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
 }
+ 

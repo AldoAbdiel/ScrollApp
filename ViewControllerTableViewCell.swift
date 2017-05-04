@@ -17,6 +17,7 @@ class ViewControllerTableViewCell: UITableViewCell {
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var myImage: UIImageView!
     @IBAction func heartPressed(_ sender: UIButton) {
+        print("like event")
         counter += 1
         likesCount.text = String(counter)
         heartIcon.tintColor = UIColor.red
