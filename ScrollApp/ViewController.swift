@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableData: UITableView!
     
-    let dogs = ["dog-1", "dog-2", "dog-3", "dog-1", "dog-2", "dog-3"]
-    let fun = ["fun-1", "fun-2", "fun-3", "fun-4", "fun-5"]
-    //var data
+    let dogsData = ["dog-1", "dog-2", "dog-3", "dog-4", "dog-5"]
+    let funData = ["fun-1", "fun-2", "fun-3", "fun-4", "fun-5"]
+    let otherData = ["other-1", "other-2", "other-3", "other-4", "other-5"]
+  
+    var check = false
+    var myData = [String]()
+
 
     @IBAction func changeSection(_ sender: UIButton) {
         
@@ -29,14 +34,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             fun.titleLabel?.textColor = UIColor.gray
             other.titleLabel?.textColor = UIColor.gray
             settings.titleLabel?.textColor = UIColor.gray
+            refresh(tdata: dogsData)
             print("home clic")
         case 2:
             home.titleLabel?.textColor = UIColor.gray
             fun.titleLabel?.textColor = UIColor.white
             other.titleLabel?.textColor = UIColor.gray
             settings.titleLabel?.textColor = UIColor.gray
-               
-            refresh()
+            refresh(tdata: funData)
             print("fun clic")
             
         case 3:
@@ -44,6 +49,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             fun.titleLabel?.textColor = UIColor.gray
             other.titleLabel?.textColor = UIColor.white
             settings.titleLabel?.textColor = UIColor.gray
+            refresh(tdata: otherData)
             print("other clic")
         case 4:
             home.titleLabel?.textColor = UIColor.gray
@@ -58,22 +64,38 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return (dogs.count)
+        return (myData.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         
-        cell.myImage.image = UIImage(named: (dogs[indexPath.row] + ".jpg"))
-        cell.myLabel.text = dogs[indexPath.row]
+        cell.myImage.image = UIImage(named: (myData[indexPath.row] + ".jpg"))
+        cell.myLabel.text = myData[indexPath.row]
         return (cell)
     }
     
-    func refresh(){
-        self.tableData.reloadData()
+    func refresh(tdata:[String]){
+        check = true
+        myData = tdata
+        DispatchQueue.main.async {
+            self.tableData.reloadData()
+        }
     }
     
     override func viewDidLoad() {
+        
+        Alamofire.request("http://codewithchris.com/code/afsample.json").responseJSON { (response) -> Void in
+            // Check if the result has a value
+            if let JSON = response.result.value {
+                print(JSON)
+            }
+            
+        }
+        
+        if(check == false){
+            myData = dogsData
+        }
         print("viewDidLoad")
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

@@ -12,6 +12,13 @@
 		654C579F1EBB1A76000371A3 /* fun-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654C579A1EBB1A76000371A3 /* fun-3.jpg */; };
 		654C57A01EBB1A76000371A3 /* fun-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654C579B1EBB1A76000371A3 /* fun-4.jpg */; };
 		654C57A11EBB1A76000371A3 /* fun-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654C579C1EBB1A76000371A3 /* fun-5.jpg */; };
+		657F1B671EBC5BB9000CC66C /* dog-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 657F1B601EBC5BB9000CC66C /* dog-4.jpg */; };
+		657F1B681EBC5BB9000CC66C /* dog-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 657F1B611EBC5BB9000CC66C /* dog-5.jpg */; };
+		657F1B6C1EBC5BB9000CC66C /* other-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 657F1B651EBC5BB9000CC66C /* other-4.jpg */; };
+		657F1B701EBC5CB1000CC66C /* other-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 657F1B6E1EBC5CB1000CC66C /* other-2.jpg */; };
+		657F1B711EBC5CB1000CC66C /* other-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 657F1B6F1EBC5CB1000CC66C /* other-3.jpg */; };
+		657F1B741EBC5E31000CC66C /* other-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 657F1B721EBC5E31000CC66C /* other-1.jpg */; };
+		657F1B751EBC5E31000CC66C /* other-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 657F1B731EBC5E31000CC66C /* other-5.jpg */; };
 		65944C3F1E8CC2D100701E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65944C3E1E8CC2D100701E3A /* AppDelegate.swift */; };
 		65944C411E8CC2D100701E3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65944C401E8CC2D100701E3A /* ViewController.swift */; };
 		65944C441E8CC2D100701E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65944C421E8CC2D100701E3A /* Main.storyboard */; };
@@ -21,14 +28,23 @@
 		65D2B7211E9634AE003C3206 /* dog-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65D2B7201E9634AE003C3206 /* dog-1.jpg */; };
 		65D2B7231E9634BC003C3206 /* dog-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65D2B7221E9634BC003C3206 /* dog-2.jpg */; };
 		65D2B7251E9634CF003C3206 /* dog-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65D2B7241E9634CF003C3206 /* dog-3.jpg */; };
+		889B757BEE6C0AFD29EB2CB9 /* Pods_ScrollApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EE7FF4118E452D0B59C8C8 /* Pods_ScrollApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24EE7FF4118E452D0B59C8C8 /* Pods_ScrollApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		654C57981EBB1A76000371A3 /* fun-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fun-1.jpg"; sourceTree = "<group>"; };
 		654C57991EBB1A76000371A3 /* fun-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fun-2.jpg"; sourceTree = "<group>"; };
 		654C579A1EBB1A76000371A3 /* fun-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fun-3.jpg"; sourceTree = "<group>"; };
 		654C579B1EBB1A76000371A3 /* fun-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fun-4.jpg"; sourceTree = "<group>"; };
 		654C579C1EBB1A76000371A3 /* fun-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fun-5.jpg"; sourceTree = "<group>"; };
+		657F1B601EBC5BB9000CC66C /* dog-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dog-4.jpg"; sourceTree = "<group>"; };
+		657F1B611EBC5BB9000CC66C /* dog-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dog-5.jpg"; sourceTree = "<group>"; };
+		657F1B651EBC5BB9000CC66C /* other-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "other-4.jpg"; sourceTree = "<group>"; };
+		657F1B6E1EBC5CB1000CC66C /* other-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "other-2.jpg"; sourceTree = "<group>"; };
+		657F1B6F1EBC5CB1000CC66C /* other-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "other-3.jpg"; sourceTree = "<group>"; };
+		657F1B721EBC5E31000CC66C /* other-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "other-1.jpg"; sourceTree = "<group>"; };
+		657F1B731EBC5E31000CC66C /* other-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "other-5.jpg"; sourceTree = "<group>"; };
 		65944C3B1E8CC2D100701E3A /* ScrollApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65944C3E1E8CC2D100701E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65944C401E8CC2D100701E3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +56,8 @@
 		65D2B7201E9634AE003C3206 /* dog-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "dog-1.jpg"; path = "Assets.xcassets/dog-1.imageset/dog-1.jpg"; sourceTree = "<group>"; };
 		65D2B7221E9634BC003C3206 /* dog-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "dog-2.jpg"; path = "Assets.xcassets/dog-2.imageset/dog-2.jpg"; sourceTree = "<group>"; };
 		65D2B7241E9634CF003C3206 /* dog-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "dog-3.jpg"; path = "Assets.xcassets/dog-3.imageset/dog-3.jpg"; sourceTree = "<group>"; };
+		6A55BD279B9FEC53081CA7A9 /* Pods-ScrollApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollApp/Pods-ScrollApp.release.xcconfig"; sourceTree = "<group>"; };
+		AA93626CE651EC32A20A5BDC /* Pods-ScrollApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollApp/Pods-ScrollApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889B757BEE6C0AFD29EB2CB9 /* Pods_ScrollApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +77,8 @@
 			children = (
 				65944C3D1E8CC2D100701E3A /* ScrollApp */,
 				65944C3C1E8CC2D100701E3A /* Products */,
+				7B7AAD1FB78C1E445C50DF6C /* Pods */,
+				A5C4FE68395128E35E9C7F67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +93,13 @@
 		65944C3D1E8CC2D100701E3A /* ScrollApp */ = {
 			isa = PBXGroup;
 			children = (
+				657F1B721EBC5E31000CC66C /* other-1.jpg */,
+				657F1B731EBC5E31000CC66C /* other-5.jpg */,
+				657F1B6E1EBC5CB1000CC66C /* other-2.jpg */,
+				657F1B6F1EBC5CB1000CC66C /* other-3.jpg */,
+				657F1B601EBC5BB9000CC66C /* dog-4.jpg */,
+				657F1B611EBC5BB9000CC66C /* dog-5.jpg */,
+				657F1B651EBC5BB9000CC66C /* other-4.jpg */,
 				654C57981EBB1A76000371A3 /* fun-1.jpg */,
 				654C57991EBB1A76000371A3 /* fun-2.jpg */,
 				654C579A1EBB1A76000371A3 /* fun-3.jpg */,
@@ -91,6 +119,23 @@
 			path = ScrollApp;
 			sourceTree = "<group>";
 		};
+		7B7AAD1FB78C1E445C50DF6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA93626CE651EC32A20A5BDC /* Pods-ScrollApp.debug.xcconfig */,
+				6A55BD279B9FEC53081CA7A9 /* Pods-ScrollApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A5C4FE68395128E35E9C7F67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24EE7FF4118E452D0B59C8C8 /* Pods_ScrollApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65944C4D1E8CC2D100701E3A /* Build configuration list for PBXNativeTarget "ScrollApp" */;
 			buildPhases = (
+				3CF8551C286C472158ACF530 /* [CP] Check Pods Manifest.lock */,
 				65944C371E8CC2D100701E3A /* Sources */,
 				65944C381E8CC2D100701E3A /* Frameworks */,
 				65944C391E8CC2D100701E3A /* Resources */,
+				3BBAC54C7F18D3BC824AB2A1 /* [CP] Embed Pods Frameworks */,
+				E94E39C6D5F5A6748D7F3EBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,19 +201,74 @@
 			files = (
 				654C579E1EBB1A76000371A3 /* fun-2.jpg in Resources */,
 				65D2B7211E9634AE003C3206 /* dog-1.jpg in Resources */,
+				657F1B711EBC5CB1000CC66C /* other-3.jpg in Resources */,
+				657F1B741EBC5E31000CC66C /* other-1.jpg in Resources */,
 				65944C491E8CC2D100701E3A /* LaunchScreen.storyboard in Resources */,
 				65D2B7231E9634BC003C3206 /* dog-2.jpg in Resources */,
 				65944C461E8CC2D100701E3A /* Assets.xcassets in Resources */,
+				657F1B681EBC5BB9000CC66C /* dog-5.jpg in Resources */,
 				654C579F1EBB1A76000371A3 /* fun-3.jpg in Resources */,
 				654C57A11EBB1A76000371A3 /* fun-5.jpg in Resources */,
+				657F1B671EBC5BB9000CC66C /* dog-4.jpg in Resources */,
+				657F1B6C1EBC5BB9000CC66C /* other-4.jpg in Resources */,
 				654C57A01EBB1A76000371A3 /* fun-4.jpg in Resources */,
+				657F1B701EBC5CB1000CC66C /* other-2.jpg in Resources */,
 				65D2B7251E9634CF003C3206 /* dog-3.jpg in Resources */,
 				654C579D1EBB1A76000371A3 /* fun-1.jpg in Resources */,
+				657F1B751EBC5E31000CC66C /* other-5.jpg in Resources */,
 				65944C441E8CC2D100701E3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BBAC54C7F18D3BC824AB2A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollApp/Pods-ScrollApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CF8551C286C472158ACF530 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E94E39C6D5F5A6748D7F3EBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollApp/Pods-ScrollApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65944C371E8CC2D100701E3A /* Sources */ = {
@@ -295,7 +398,9 @@
 		};
 		65944C4E1E8CC2D100701E3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA93626CE651EC32A20A5BDC /* Pods-ScrollApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MWMQZPKYDH;
 				INFOPLIST_FILE = ScrollApp/Info.plist;
@@ -308,7 +413,9 @@
 		};
 		65944C4F1E8CC2D100701E3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A55BD279B9FEC53081CA7A9 /* Pods-ScrollApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MWMQZPKYDH;
 				INFOPLIST_FILE = ScrollApp/Info.plist;
