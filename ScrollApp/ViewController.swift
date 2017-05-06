@@ -3,7 +3,7 @@
 //  ScrollApp
 //
 //  Created by Aldo Abdiel Rodríguez Chávez on 3/29/17.
-//  Copyright © 2017 Cesar Mauricio Cavazos Rodriguez. All rights reserved.
+//  Copyright © 2017 Aldo Abdiel Rodríguez Chávez. All rights reserved.
 //
 
 import UIKit
@@ -13,13 +13,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableData: UITableView!
     
+    @IBOutlet weak var labelTitle: UILabel!
     let dogsData = ["dog-1", "dog-2", "dog-3", "dog-4", "dog-5"]
     let funData = ["fun-1", "fun-2", "fun-3", "fun-4", "fun-5"]
     let otherData = ["other-1", "other-2", "other-3", "other-4", "other-5"]
   
     var check = false
     var myData = [String]()
-
+    var myInformation: String!
 
     @IBAction func changeSection(_ sender: UIButton) {
         
@@ -52,11 +53,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             refresh(tdata: otherData)
             print("other clic")
         case 4:
-            home.titleLabel?.textColor = UIColor.gray
-            fun.titleLabel?.textColor = UIColor.gray
-            other.titleLabel?.textColor = UIColor.gray
+            //home.titleLabel?.textColor = UIColor.gray
+            //fun.titleLabel?.textColor = UIColor.gray
+            //sother.titleLabel?.textColor = UIColor.gray
             settings.titleLabel?.textColor = UIColor.white
             print("settings clic")
+            
+            let popOverVC = UIStoryboard(name: "Main", bundle:
+                nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
+            self.addChildViewController(popOverVC)
+            popOverVC.view.frame = self.view.frame
+            self.view.addSubview(popOverVC.view)
+            popOverVC.didMove(toParentViewController: self)
             
         default:
             print("default output")
@@ -90,7 +98,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             if let JSON = response.result.value {
                 print(JSON)
             }
-            
         }
         
         if(check == false){
@@ -106,4 +113,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
 }
- 
+

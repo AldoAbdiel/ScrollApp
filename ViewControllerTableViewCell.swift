@@ -3,7 +3,7 @@
 //  ScrollApp
 //
 //  Created by Aldo Abdiel Rodríguez Chávez on 4/6/17.
-//  Copyright © 2017 Cesar Mauricio Cavazos Rodriguez. All rights reserved.
+//  Copyright © 2017 Aldo Abdiel Rodríguez Chávez. All rights reserved.
 //
 
 import UIKit
@@ -12,10 +12,10 @@ class ViewControllerTableViewCell: UITableViewCell {
     
     var counter = 0
     
-    @IBOutlet weak var heartIcon: UIButton!
-    @IBOutlet weak var likesCount: UILabel!
-    @IBOutlet weak var myLabel: UILabel!
-    @IBOutlet weak var myImage: UIImageView!
+    @IBOutlet weak var heartIcon: UIButton! // likes
+    @IBOutlet weak var likesCount: UILabel! // likes counter
+    @IBOutlet weak var myLabel: UILabel! // title label
+    @IBOutlet weak var myImage: UIImageView! // image
     @IBAction func heartPressed(_ sender: UIButton) {
         print("like event")
         counter += 1
@@ -31,5 +31,17 @@ class ViewControllerTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("ENTRO!!!!!!!!")
+        if (segue.identifier == "titlePost") {
+            // pass data to next view
+            print("PASAMOS LA INFOR VATOS")
+            if let reference = segue.destination as? PopUpViewController {
+                reference.desiredLabelValue = self.myLabel
+            }
+        }
     }
 }

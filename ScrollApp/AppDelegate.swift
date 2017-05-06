@@ -3,7 +3,7 @@
 //  ScrollApp
 //
 //  Created by Aldo Abdiel Rodríguez Chávez on 3/29/17.
-//  Copyright © 2017 Cesar Mauricio Cavazos Rodriguez. All rights reserved.
+//  Copyright © 2017 Aldo Abdiel Rodríguez Chávez. All rights reserved.
 //
 
 import UIKit
