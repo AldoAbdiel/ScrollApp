@@ -11,6 +11,7 @@ import Alamofire
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var cell: UIView!
     @IBOutlet weak var tableData: UITableView!
     
     @IBOutlet weak var labelTitle: UILabel!
@@ -21,7 +22,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var check = false
     var myData = [String]()
     var myInformation: String!
-
+    
+    var myCell: UIView!
+    
     @IBAction func changeSection(_ sender: UIButton) {
         
         let home = view.viewWithTag(1) as! UIButton
@@ -77,15 +80,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
-        
         cell.myImage.image = UIImage(named: (myData[indexPath.row] + ".jpg"))
         cell.myLabel.text = myData[indexPath.row]
+        TableHelper.desiredCellValue.append(cell.myCell)
+        TableHelper.desiredTitleValue.append(cell.myLabel)
+        TableHelper.desiredLikesValue.append(cell.likesCount)
         return (cell)
     }
     
     func refresh(tdata:[String]){
         check = true
         myData = tdata
+        print("entra a refresh")
         DispatchQueue.main.async {
             self.tableData.reloadData()
         }
@@ -95,14 +101,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         Alamofire.request("http://codewithchris.com/code/afsample.json").responseJSON { (response) -> Void in
             // Check if the result has a value
-            if let JSON = response.result.value {
-                print(JSON)
-            }
+            //if let JSON = response.result.value {
+                //print(JSON)
+            //}
         }
         
         if(check == false){
             myData = dogsData
         }
+        
         print("viewDidLoad")
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

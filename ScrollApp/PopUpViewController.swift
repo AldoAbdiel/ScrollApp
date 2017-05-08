@@ -10,20 +10,26 @@ import UIKit
 
 class PopUpViewController: UIViewController {
 
-    var desiredLabelValue: UILabel!
+    //var desiredLabelValue: UILabel!
     
     @IBAction func nightModeSwitch(_ sender: UISwitch) {
         //let title = view.viewWithTag(10) as! UILabel
         
         if(sender.isOn == true){
+            print("SWITCH ON")
+            for var i in(0..<TableHelper.desiredCellValue.count).reversed(){
+                TableHelper.desiredCellValue[i].backgroundColor = UIColor.black
+                TableHelper.desiredTitleValue[i].textColor = UIColor.white
+                TableHelper.desiredLikesValue[i].textColor = UIColor.white
+            }
             
-            // Set nightmode ON
-            //self.desiredLabelValue.textColor = UIColor.blue
         }else{
-            //self.desiredLabelValue.text = "Desactivado"
-            // Set nightmode OFF
-            //self.desiredLabelValue.textColor = UIColor.red
-            
+            print("SWITCH OFF")
+            for var i in(0..<TableHelper.desiredCellValue.count).reversed(){
+                TableHelper.desiredCellValue[i].backgroundColor = UIColor.white
+                TableHelper.desiredTitleValue[i].textColor = UIColor.black
+                TableHelper.desiredLikesValue[i].textColor = UIColor.black
+            }
         }
     }
     
