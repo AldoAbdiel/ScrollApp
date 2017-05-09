@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		651A941B1EBDB1B000A40E7A /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A941A1EBDB1B000A40E7A /* PopUpViewController.swift */; };
+		6532E6411EC1B17C00EDFCBA /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532E6401EC1B17C00EDFCBA /* PostViewController.swift */; };
 		654A7C831EC05A8000F40BFE /* TableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654A7C821EC05A8000F40BFE /* TableHelper.swift */; };
 		654C579D1EBB1A76000371A3 /* fun-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654C57981EBB1A76000371A3 /* fun-1.jpg */; };
 		654C579E1EBB1A76000371A3 /* fun-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654C57991EBB1A76000371A3 /* fun-2.jpg */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		24EE7FF4118E452D0B59C8C8 /* Pods_ScrollApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		651A941A1EBDB1B000A40E7A /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		6532E6401EC1B17C00EDFCBA /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		654A7C821EC05A8000F40BFE /* TableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHelper.swift; sourceTree = "<group>"; };
 		654C57981EBB1A76000371A3 /* fun-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fun-1.jpg"; sourceTree = "<group>"; };
 		654C57991EBB1A76000371A3 /* fun-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fun-2.jpg"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				65944C401E8CC2D100701E3A /* ViewController.swift */,
 				654A7C821EC05A8000F40BFE /* TableHelper.swift */,
 				65944C421E8CC2D100701E3A /* Main.storyboard */,
+				6532E6401EC1B17C00EDFCBA /* PostViewController.swift */,
 				65944C451E8CC2D100701E3A /* Assets.xcassets */,
 				65944C471E8CC2D100701E3A /* LaunchScreen.storyboard */,
 				65944C4A1E8CC2D100701E3A /* Info.plist */,
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6532E6411EC1B17C00EDFCBA /* PostViewController.swift in Sources */,
 				65944C411E8CC2D100701E3A /* ViewController.swift in Sources */,
 				654A7C831EC05A8000F40BFE /* TableHelper.swift in Sources */,
 				65944C3F1E8CC2D100701E3A /* AppDelegate.swift in Sources */,
@@ -410,6 +414,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = MWMQZPKYDH;
 				INFOPLIST_FILE = ScrollApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -425,6 +430,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = MWMQZPKYDH;
 				INFOPLIST_FILE = ScrollApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

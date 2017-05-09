@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class TableHelper{
+    static var switchState = Bool()
     static var desiredCellValue = [UIView!]()
     static var desiredTitleValue = [UILabel!]()
     static var desiredLikesValue = [UILabel!]()

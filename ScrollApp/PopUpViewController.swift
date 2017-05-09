@@ -9,9 +9,8 @@
 import UIKit
 
 class PopUpViewController: UIViewController {
-
-    //var desiredLabelValue: UILabel!
-    
+ 
+    @IBOutlet weak var switchUI: UISwitch!
     @IBAction func nightModeSwitch(_ sender: UISwitch) {
         //let title = view.viewWithTag(10) as! UILabel
         
@@ -21,21 +20,30 @@ class PopUpViewController: UIViewController {
                 TableHelper.desiredCellValue[i].backgroundColor = UIColor.black
                 TableHelper.desiredTitleValue[i].textColor = UIColor.white
                 TableHelper.desiredLikesValue[i].textColor = UIColor.white
+                i+=1
             }
-            
+            TableHelper.switchState = true
         }else{
             print("SWITCH OFF")
             for var i in(0..<TableHelper.desiredCellValue.count).reversed(){
                 TableHelper.desiredCellValue[i].backgroundColor = UIColor.white
                 TableHelper.desiredTitleValue[i].textColor = UIColor.black
                 TableHelper.desiredLikesValue[i].textColor = UIColor.black
+                i+=1
             }
+            TableHelper.switchState = false
         }
     }
     
     override func viewDidLoad() {
         // Do any additional setup after loading the view.
         super.viewDidLoad()
+        if(TableHelper.switchState == true){
+            switchUI.setOn(true, animated: false)
+        }else{
+            switchUI.setOn(false, animated: false)
+            
+        }
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         self.showAnimate()
     }
@@ -69,13 +77,4 @@ class PopUpViewController: UIViewController {
             }
         });
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
