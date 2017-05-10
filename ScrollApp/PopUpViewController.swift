@@ -2,7 +2,8 @@
 //  PopUpViewController.swift
 //  
 //
-//  Created by Aldo Abdiel Rodriguez Chavez on 5/6/17.
+//  Created by Aldo Abdiel Rodríguez Chávez on 3/29/17.
+//  Copyright © 2017 Aldo Abdiel Rodríguez Chávez. All rights reserved.
 //
 //
 

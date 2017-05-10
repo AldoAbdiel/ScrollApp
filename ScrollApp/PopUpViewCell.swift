@@ -2,8 +2,8 @@
 //  PopUpViewCell.swift
 //  ScrollApp
 //
-//  Created by Cesar Mauricio Cavazos Rodriguez on 5/6/17.
-//  Copyright © 2017 Cesar Mauricio Cavazos Rodriguez. All rights reserved.
+//  Created by Aldo Abdiel Rodríguez Chávez on 3/29/17.
+//  Copyright © 2017 Aldo Abdiel Rodríguez Chávez. All rights reserved.
 //
 
 import UIKit
